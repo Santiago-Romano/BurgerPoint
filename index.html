@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>Burger Point</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header>
+  <div class="headrow">
+    <div class="logo"><img class="logoimg" src="data:image/png;base64,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" alt="logo"><span class="name">BURGER POINT<small>ITUZAINGÓ</small></span></div>
+    <button id="cartBtn" data-action="open-cart">🛒<span id="cartCount">0</span></button>
+  </div>
+  <nav id="tabs"></nav>
+</header>
+<main id="menu"></main>
+
+<div class="info-blocks">
+  <div><div class="ic">🏍️</div><b>DELIVERY</b><p>Ituzaingó, Castelar, Padua, Udaondo y Villa Tesei</p></div>
+  <div><div class="ic">📍</div><b>UBICACIÓN</b><p>Ubicados en la localidad de Ituzaingó</p></div>
+  <div><div class="ic">💳</div><b>FORMAS DE PAGO</b><p>Para pagos online (Tarjeta, Mercado Pago o transferencia): Una vez hecho el pedido te vamos a enviar los datos necesarios para que puedas abonar.</p></div>
+</div>
+
+<footer>
+  <div class="footer-brand">
+    <h4>BURGER POINT</h4>
+    <div class="footer-socials">
+      <a class="footer-social-link" href="https://wa.me/5491162118588" target="_blank" rel="noopener noreferrer" aria-label="Contactar a Burger Point por WhatsApp" title="WhatsApp">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.1 11.7a8.1 8.1 0 0 1-12 7.1L4 20l1.2-4A8.1 8.1 0 1 1 20.1 11.7Z"/><path d="M8.5 7.8c.2-.5.5-.5.8-.5h.5c.2 0 .4.1.5.4l.7 1.7c.1.2.1.4 0 .5l-.5.7c-.2.2-.2.4 0 .6.5.9 1.2 1.6 2.1 2.1.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.6.8c.3.1.4.3.4.5 0 .3-.1 1.1-.7 1.6-.5.5-1.2.7-1.9.6-1.1-.1-2.6-.8-4.1-2.1-1.3-1.2-2.2-2.8-2.4-3.8-.2-.9.1-1.6.6-2.1.2-.2.4-.3.5-.3Z"/></svg>
+      </a>
+      <a class="footer-social-link" href="https://www.instagram.com/burger.point_" target="_blank" rel="noopener noreferrer" aria-label="Seguir a Burger Point en Instagram" title="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5"/><circle cx="12" cy="12" r="4.1"/><circle class="instagram-dot" cx="17.8" cy="6.5" r="1"/></svg>
+      </a>
+    </div>
+  </div>
+  <p>📍 Cnel. Quesada 1275, Ituzaingó - Buenos Aires</p>
+  <p>📞 1162118588 · 💬 5491162118588</p>
+  <p>🕒 Miércoles a Lunes de 19:30 a 23:30hs</p>
+</footer>
+
+<a id="whatsappFloat" href="https://wa.me/5491162118588" target="_blank" rel="noopener noreferrer" aria-label="Hacer un pedido por WhatsApp" title="Pedir por WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.1 11.7a8.1 8.1 0 0 1-12 7.1L4 20l1.2-4A8.1 8.1 0 1 1 20.1 11.7Z"/><path d="M8.5 7.8c.2-.5.5-.5.8-.5h.5c.2 0 .4.1.5.4l.7 1.7c.1.2.1.4 0 .5l-.5.7c-.2.2-.2.4 0 .6.5.9 1.2 1.6 2.1 2.1.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.6.8c.3.1.4.3.4.5 0 .3-.1 1.1-.7 1.6-.5.5-1.2.7-1.9.6-1.1-.1-2.6-.8-4.1-2.1-1.3-1.2-2.2-2.8-2.4-3.8-.2-.9.1-1.6.6-2.1.2-.2.4-.3.5-.3Z"/></svg>
+</a>
+
+<div id="cartPanel">
+  <div class="sheet">
+    <button class="closeBtn" data-action="close-cart">✕</button>
+    <h2>Tu pedido</h2>
+    <div id="cartLines"></div>
+    <div id="clearWrap"><button id="clearBtn" data-action="clear-cart">🗑️ Vaciar carrito</button></div>
+    <div class="total"><span>Total</span><span id="cartTotal">$0</span></div>
+    <div id="checkoutForm" style="display:none">
+      <label>Nombre</label><input id="fName">
+      <label>Tipo de entrega</label>
+      <select id="fTipo"><option value="Delivery">Delivery</option><option value="Retiro en local">Retiro en local</option></select>
+      <div id="dirWrap"><label>Dirección de entrega</label><input id="fDir" placeholder="Calle, número, localidad"></div>
+      <label>Forma de pago</label>
+      <select id="fPago"><option>Efectivo</option><option>Transferencia bancaria</option></select>
+      <label>Notas (opcional)</label><textarea id="fNotas" rows="2"></textarea>
+      <button data-action="send-whatsapp">Enviar pedido por WhatsApp</button>
+    </div>
+    <button id="checkoutBtn" data-action="show-checkout">Continuar pedido</button>
+  </div>
+</div>
+
+<div id="modalPanel">
+  <div class="sheet">
+
+    <button class="closeBtn" data-action="close-modal">✕</button>
+
+    <h2 id="modalTitle"></h2>
+
+     <div id="modalProductImage">
+          <img id="modalImage" src="" alt="">
+    </div>
+
+    <div id="modalBody"></div>
+
+    <div id="modalTotalBar">
+      <div class="total">
+        <span>Total</span>
+        <span id="modalTotal">$0</span>
+      </div>
+
+      <button id="waBtn" data-action="add-custom-to-cart">Agregar al carrito</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
